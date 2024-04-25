@@ -1,0 +1,146 @@
+body{
+    background-color: rgb(20, 29, 56);
+    color:  rgb(20, 29, 56);
+    font-weight: 600;
+    overflow: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.body{
+    animation: colo 1s linear infinite;
+    transition: 1s;
+}
+@keyframes colo {
+    0%{
+        background-image: linear-gradient(100deg, white 50%, blue 50%);
+    }100%{
+        background-image: linear-gradient(100deg, red 50%, white 10%);
+    }
+}
+
+.move{
+    animation: mov 1s linear infinite;
+    position: absolute;
+    top: 30%;
+}
+@keyframes mov {
+    0%{
+        left: -100%;
+    }50%{
+        top: -30%;
+    }100%{
+        left: 160%;
+        top: 70vh;
+    }
+}
+h1{
+    text-align: center;
+}
+main{
+    width: 90%;
+    height: 60vh;
+    border: solid transparent;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: auto;
+    padding: 5px;
+    top: 70px;
+    position: relative;
+}
+form{
+    width: 45%;
+    height: 100%;
+    border: solid transparent;
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    border: solid;
+    background-color: aliceblue;
+}
+input{
+    position: relative;
+    width: 250px;
+    height: 35px;
+    max-width: 80%;
+    margin: auto;
+    border-radius: 3px;
+    border: solid  rgb(20, 29, 56);
+    background-color:  aliceblue;
+    border-left: transparent;
+    border-right: transparent;
+    text-align: center;
+    font-size: 18px;
+}
+button{
+    width: 80px;
+    height: 30px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: 550;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    border: solid rgb(20, 29, 56);
+    border-left: transparent;
+    border-right: transparent;
+    background-color: aliceblue;
+    transition: 0.5s;
+}
+button:hover{
+    border: solid rgb(20, 29, 56);
+}
+#result{
+    position: relative;
+    min-width: 200px;
+    max-width: 70%;
+    width:auto;
+    min-height:30px;
+    max-height: 50px;
+    height: auto;
+    border: solid;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    color: black;
+    border-radius: 5px;
+    overflow: scroll;
+}
+#result::-webkit-scrollbar{
+    background-color: transparent;
+}
+
+.alert{
+    width:200px;
+    height:30px;
+    border: solid;
+    text-align: center;
+    animation: alert 0.5s linear infinite;
+}
+@keyframes alert {
+    from{
+        background-color: red;
+    }to{
+        background-color: white;
+    }
+}
+
+@media screen and (max-width: 500px){
+    h1{
+        font-size: 25px;
+    }
+    main{
+        height: 70vh;
+    top: 20px;
+
+    }
+    form{
+        position:absolute;
+        width:100%;
+        height: 100%;
+        left:0px;
+        top: 2PX;
+    }
+
+}
