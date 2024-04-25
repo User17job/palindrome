@@ -1,0 +1,2 @@
+# palindrome
+paractice of FreeCodCamp
