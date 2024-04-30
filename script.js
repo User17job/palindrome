@@ -23,7 +23,7 @@ let valor = input.value;
         const semiPalin = string.toLowerCase().replace(/[^a-z0-9]/g, '');
         return semiPalin === semiPalin.split('').reverse().join('');
    }else{
-        alert("Please input a value");
+      Swal.fire("Please input a value");
         // creating an alert with color
         result.classList.add('alert');
         document.body.classList.add("body");
